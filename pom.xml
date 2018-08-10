@@ -23,6 +23,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <kotlin.version>1.2.60</kotlin.version>
+        <elasticsearch-rest-high-level-client.version>6.3.1</elasticsearch-rest-high-level-client.version>
     </properties>
 
     <dependencies>
@@ -37,7 +38,7 @@
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
-            <version>6.3.1</version>
+            <version>${elasticsearch-rest-high-level-client.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
@@ -126,7 +127,7 @@
                         <configuration>
                             <images>
                                 <image>
-                                    <name>docker.elastic.co/elasticsearch/elasticsearch:6.3.1</name>
+                                    <name>docker.elastic.co/elasticsearch/elasticsearch:${elasticsearch-rest-high-level-client.version}</name>
                                     <alias>it-elasticsearch</alias>
                                     <run>
                                         <env>
