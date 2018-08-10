@@ -1,7 +1,7 @@
-package de.larmic.springbootelasticsearchoverhttp
+package de.larmic.springbootelasticsearchoverhttp.database
 
-import de.larmic.springbootelasticsearchoverhttp.TweetDocument.Companion.documentIndex
-import de.larmic.springbootelasticsearchoverhttp.TweetDocument.Companion.documentType
+import de.larmic.springbootelasticsearchoverhttp.database.TweetDocument.Companion.documentIndex
+import de.larmic.springbootelasticsearchoverhttp.database.TweetDocument.Companion.documentType
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest
 import org.elasticsearch.action.admin.indices.get.GetIndexRequest
 import org.elasticsearch.client.RestHighLevelClient

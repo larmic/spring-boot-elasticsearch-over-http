@@ -1,10 +1,11 @@
-package de.larmic.springbootelasticsearchoverhttp
+package de.larmic.springbootelasticsearchoverhttp.database
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.KotlinModule
-import de.larmic.springbootelasticsearchoverhttp.TweetDocument.Companion.documentIndex
-import de.larmic.springbootelasticsearchoverhttp.TweetDocument.Companion.documentType
+import de.larmic.springbootelasticsearchoverhttp.Tweet
+import de.larmic.springbootelasticsearchoverhttp.database.TweetDocument.Companion.documentIndex
+import de.larmic.springbootelasticsearchoverhttp.database.TweetDocument.Companion.documentType
 import org.elasticsearch.action.delete.DeleteRequest
 import org.elasticsearch.action.get.GetRequest
 import org.elasticsearch.action.index.IndexRequest

@@ -1,16 +1,12 @@
 package de.larmic.springbootelasticsearchoverhttp
 
-import com.fasterxml.jackson.databind.DeserializationFeature
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.KotlinModule
+import de.larmic.springbootelasticsearchoverhttp.database.TweetRepository
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
 class TweetController(private val tweetRepository: TweetRepository) {
-
-    private val mapper = ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false).registerModule(KotlinModule())
 
     @PostMapping("/")
     fun tweet(@RequestBody tweet: String) = tweetRepository.storeTweet(tweet)

@@ -1,4 +1,4 @@
-package de.larmic.springbootelasticsearchoverhttp
+package de.larmic.springbootelasticsearchoverhttp.database
 
 class TweetDocument(val message: String) {
     companion object {
