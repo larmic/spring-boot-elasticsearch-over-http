@@ -1,7 +1,7 @@
 package de.larmic.springbootelasticsearchoverhttp
 
-import de.larmic.springbootelasticsearchoverhttp.Tweet.Companion.documentIndex
-import de.larmic.springbootelasticsearchoverhttp.Tweet.Companion.documentType
+import de.larmic.springbootelasticsearchoverhttp.TweetDocument.Companion.documentIndex
+import de.larmic.springbootelasticsearchoverhttp.TweetDocument.Companion.documentType
 import org.assertj.core.api.Assertions.assertThat
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest
