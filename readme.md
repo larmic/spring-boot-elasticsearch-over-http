@@ -23,7 +23,7 @@ mvn clean package
 ##### Start local Elasticsearch
 
 ```ssh
-docker run -d -p 9200:9200 -p 9300:9300 --name spring-boot-elastic-over-http -e "discovery.type=single-node" -e "xpack.security.enabled=false" -e "cluster.name=elasticsearch" docker.elastic.co/elasticsearch/elasticsearch:6.3.1
+docker run -d -p 9200:9200 -p 9300:9300 --name spring-boot-elastic-over-http -e "discovery.type=single-node" -e "xpack.security.enabled=false" -e "cluster.name=elasticsearch" docker.elastic.co/elasticsearch/elasticsearch:6.3.2
 ```
 
 ##### Start application
