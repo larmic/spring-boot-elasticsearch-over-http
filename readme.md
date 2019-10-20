@@ -1,5 +1,8 @@
 # Using Elasticsearch 6.3.1 over HTTP with Spring Boot 2.1.M1 and Kotlin 1.2.60
 
+*DEPRECATED*: See https://github.com/larmic/testcontainers-junit5 for an updated example using testcontainers instead of 
+using docker-maven-plugin in maven pre-integration-test phase. 
+
 With Spring Boot 2.1.0.M1 [RestHighLevelClient](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/java-rest-high-getting-started-initialization.html)
 is injectable. When using [Amazon Elasticsearch Service](https://aws.amazon.com/de/elasticsearch-service/) only http port
 is available so Spring Data does not work as default. This demo shows how http connection could work with latest
